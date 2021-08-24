@@ -1,37 +1,7 @@
-## Welcome to GitHub Pages
+##Mahdi's Personal Page
 
-You can use the [editor on GitHub](https://github.com/mahdiqezlou/mahdiqezlou.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Hi, My name is Mahdi Qezlou, a 4th year UCR-Carnegie graduate fellow. Currently I'm working on the applications Lyman Alpha Tompgraphy IMACS survey ([LATIS](https://iopscience.iop.org/article/10.3847/1538-4357/ab75ee/meta)). My work has mainly concerned with the detection and characterization of protclusters/groups in LATIS-like tomographies. Our work will be on arxiv very soon, stay tuned!!
 
-### Markdown
+I am alwys happy to chat about my work an learning about your work, so please email me : mahdi.qezlou@email.ucr.edu
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/mahdiqezlou/mahdiqezlou.github.io/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
