@@ -1,0 +1,275 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.1 (9/12/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+\usepackage{standalone}
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.85]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%\usepackage[utf8]{inputenc}
+
+%\usepackage{booktabs}
+\usepackage{fontawesome}
+\usepackage{marvosym} % For cool symbols.
+%\usepackage{hyperref}
+
+
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Mahdi(Sum)} % Your first name
+\familyname{Qezlou} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Curriculum Vitae}
+\address{Department of Physics and Astronomy}{University of California, Riverside}
+
+
+%\social{github}{stefano-bragaglia}
+\email{mahdi.qezlou@email.ucr.edu} 
+
+
+
+\homepage{qezlou.github.io/}{Webpage}
+
+% social link \faGithub, \faSkype, \faLinkedin,\faStackExchange, and \faStackOverflow
+\extrainfo{
+    \faGithub\href{https://github.com/qezlou}{ Github} \quad
+    %\faLinkedin\href{https://www.linkedin.com/abc/}{ Linkedin} \quad
+    %\faSkype\href{https://skype.com/abc}{Skype}
+    }
+
+
+
+%\social[linkedin][www.linkedin.com]{name}
+% The first argument is %the url for the clickable link, the second argument is the url displayed in the %template - this allows special characters to be displayed such as the tilde in this %example
+
+\photo[70pt][0.3pt]{photo} % The first bracket is the picture height, the second is %the thickness of the frame around the picture (0pt for no frame)
+%\quote{Not Attention, Patience is all we need.}
+
+%----------------------------------------------------------------------------------------
+
+\newcommand{\cvdoublecolumn}[2]{%
+  \cvitem[.75em]{}{%
+    \begin{minipage}[t]{\listdoubleitemcolumnwidth}#1\end{minipage}%
+    \hfill%
+    \begin{minipage}[t]{\listdoubleitemcolumnwidth}#2\end{minipage}%
+    }%
+}
+
+
+
+\usepackage{multibbl}
+\newcommand\Colorhref[3][orange]{\href{#2}{\small\color{#1}#3}}
+
+
+% \newcommand{\cvreference}[7]{%
+%     \textbf{#1}\newline% Name
+%     \ifthenelse{\equal{#2}{}}{}{\addresssymbol~#2\newline}%
+%     \ifthenelse{\equal{#3}{}}{}{#3\newline}%
+%     \ifthenelse{\equal{#4}{}}{}{#4\newline}%
+%     \ifthenelse{\equal{#5}{}}{}{#5\newline}%
+%     \ifthenelse{\equal{#6}{}}{}{\emailsymbol~\texttt{#6}\newline}%
+%     \ifthenelse{\equal{#7}{}}{}{\phonesymbol~#7}}
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Employment history and Education}
+
+\cventry{2024-present}{Postdoctoral Fellow}{University of Texas, Austin}{}{}
+{Inference on cosmological parameters through modeling the observed distribution of galaxies with the \Colorhref{https://hetdex.org/}{HETDEX} observations}
+
+\cventry{2018--2024}{PhD, Physcis \& Astronomy}{University of  California, Riverside}{}{}
+{Computational Astrophysics: Lyman-$\alpha$ forest tomography, Line Intensity Map, Machine Learning } 
+
+\cvitem{Advisors and mentors:}{Simeon Bird, UCR.
+Andrew Newman, Carnegie Observatories. 
+Gwen Rudie, Carnegie Observatories,
+Adam Lidz, UPenn}
+
+\cventry{2013-2018 :}{B.Sc in Physics }{Sharif University of Technology, SUT}{}{}{}
+\cvitem{Research Advisor :}{Shant Baghram, SUT}
+
+%{Advanced exposure to various areas of computer science along with a one and half year research project on Reversible Logic Synthesis.}
+%\cvitem{CGPA :}{7.96/10}
+%\cventry{2009--2013 :}{Bachelor of Engineering, Computer Science \& Technology}{Indian Institute of Engineering Science \& Technology}{Shibpur(\textit{Formerly} Bengal Engineering and Science University, Shibpur)}{}{}
+%{Comprehensive exposure to the core areas of Computer Science along with a final year project on Data-mining}
+%\cvitem{CGPA :}{7.36/10}
+% \cventry{2008 :}{Higher Secondary Examination}{Belmuri Union Institution}{Belmuri}{}{ Mathematics, Physics, Chemistry, Biology, English, Bengali}
+% {}
+% \cvitem{Percentage :}{81.2 \%}
+% \cventry{2006 :}{Secondary Examination}{Belmuri Union Institution}{Belmuri}{}{ Mathematics, Physical Science, Life Science, Geography, History, English, Bengali}
+% {}
+% \cvitem{Percentage :}{90.8 \%}
+
+
+\section{Research Interests:}
+ 
+\cventry{}{ Cosmological hydrodynamic simulations (\texttt{MP\_GADGET}),  $Ly-\alpha$ forest tomography at cosmic noon, Modeling Line Intensity Map Signal, Machine Learning, Artificial Intelligence, Bayesian statistics}{}{}{}{}
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATION SECTION
+%----------------------------------------------------------------------------------------
+
+
+\section{Publications}
+\cvitem{on ADS}{\Colorhref{https://ui.adsabs.harvard.edu/public-libraries/UjaV3zMmSmGOO7h_FdRJlA}{https://ui.adsabs.harvard.edu/public-libraries/UjaV3zMmSmGOO7h_FdRJlA}} 
+
+\subsection{Selected Published}
+\newbibliography{selected}
+\bibliographystyle{selected}{plainyrrev}
+\nocite{selected}{*}
+\bibliography{selected}{selected}
+{\large \textsc{Refereed Journal Articles}}
+
+\subsection{Other Published}
+\newbibliography{journal}
+\bibliographystyle{journal}{plainyrrev}
+\nocite{journal}{*}
+\bibliography{journal}{journal}
+{\large \textsc{Refereed Journal Articles}}
+
+\subsection{Submitted Articles}
+
+\newbibliography{papers_submitted}
+\bibliographystyle{papers_submitted}{plainyrrev}
+\nocite{papers_submitted}{*}
+\bibliography{papers_submitted}{papers_submitted}
+{\large \textsc{Refereed Journal Articles}}
+
+
+
+
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+
+%----------------------------------------------------------------------------------------
+%	Fellowships \& Awards
+%----------------------------------------------------------------------------------------
+
+\section{Fellowships \& Awards}
+\cvitem{2023 -- 2024}{\textit{\textbf{Dissertation-Year Fellowship}}, Awarded to only 3 students at UCR among all PhD majors.}
+\cvitem{2020 -- 2022}{\textit{\textbf{Carnegie-UCR Fellowship}} Graduate researcher fellow at Carnegie observatories to work on Ly$\alpha$ tomography IMACS survey (LATIS) project.}
+
+\cvitem{2018 -- 2019}{\textit{\textbf{UCR Graduate Dean Fellowship}}, for Fall, spring and Summer quarters}
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Computing skills}
+
+\cvitem{Computational}{Machine learning, Bayesian Statistics}
+\cvitem{Programming}{Python, C, MPI parallel computing, High-performance computing}
+\cvitem{Visualization}{Virtual Reality engines, e.g.  \textit{Blender} and \textit{Unity}, \Colorhref{https://www.youtube.com/@Qezlou}{YouTube Channel}}
+
+
+%----------------------------------------------------------------------------------------
+%	Position of Responsibility SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Mentorship Experience}
+\cventry{Fall-Winter 2022-23}{High-school science fair project, student:  Joseph Zenarosa (Martin Luther King High, Riverside)}{}{Reionization in \texttt{ASTRID} , a cosmological hydrodynamic simulation}{}{Mentoring the student for science fair competition}
+\cventry{summer 2022}{Undergraduate summer project, student:  Kevin Hong (UCLA)}{}{\textit{3D Visualization of cosmological hydrodynamical simulations}}{}{Mentoring student, visualizations using \texttt{Blender} open-source software}
+\cventry{summer 2021 and 2022 and 2023}{CASSI, Summer research program for undergraduates at Carnegie observatory,  }{}{\textit{Teaching python, high-performance computing, and scientific visualizations to $\sim$ 20 students each year}}{}{}
+
+
+%----------------------------------------------------------------------------------------
+%	Talks
+%----------------------------------------------------------------------------------------
+
+\section{Talks}
+
+\cvitem{Fall}
+{Cosmology and galaxy evolution with Ly-alpha tomography and Line Intensity Map} 
+\cvitem{2023}{Harvard, MIT, University of Pennsylvania, University of California Irvine, University of California Santa Barbara, University of Texas Austin}
+\vspace{3mm}
+
+
+
+\cvitem{February}
+{Presenting Tutorial on Machine Learning approaches in large-scale galaxy formation simulations} 
+\cvitem{2023}{\Colorhref{https://datadrivengalaxyevolution.github.io/}{KITP Program, Data Driven Astronomy}}
+\vspace{3mm}
+
+\cvitem{December}{Boosting Line Intensity Map Signal-to-Noise with the Ly-$\alpha$ Forest Cross-Correlation }
+\cvitem{2023}{Flatiron Institute, Cosmology and Astrophysics with Machine Leaning Simulations(CAMELS) \Colorhref{https://indico.flatironinstitute.org/event/3324/timetable/?view=standard#15-lyman-alpha-tomography-at-c}{workshop}}
+\vspace{3mm}
+
+\cvitem{October}{Characterizing Protoclusters and Protogroups at z $\sim$ 2.5 Using Ly-$\alpha$ Tomography}
+\cvitem{2022}{\Colorhref{https://www.ipac.caltech.edu/event/575}{IPAC Talk Series}}
+\vspace{3mm}
+\cvitem{Jun}{Characterizing Protoclusters and Protogroups at z $\sim$ 2.5 Using Ly-$\alpha$ Tomography}
+\cvitem{2022}{\Colorhref{https://www.cosmologyfromhome.com/}{Cosmology from home conference}}
+
+\vspace{3mm}
+\cvitem{September}{Characterizing Protoclusters and Protogroups at z $\sim$ 2.5 Using Ly-$\alpha$ Tomography}
+\cvitem{2022}{\Colorhref{https://protoclusters.wordpress.com/home/program/}{Protoclusters: galaxies in confinement}}
+
+
+%----------------------------------------------------------------------------------------
+%	Professional service
+%----------------------------------------------------------------------------------------
+
+\section{Professional service }
+
+\cvitem{}{Referee for high-impact journals: \textbf{ ApJ Letters} \textbf{ Physical Review D}}
+\cvitem{}{Review panelist : \textbf{Gemini telescope} Canadian time allocation committee (CanTAC)}
+
+
+
+%----------------------------------------------------------------------------------------
+%	Teaching Assistantship SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Teaching Assistantship}
+\cventry{2018 :}{Physics lab I}{}{UCR}{}{}
+\cventry{2017-18 :}{Quantum mechanics I \& II}{}{SUT}{}{}
+\cventry{2016 :}{Special relativity}{}{}{SUT}{}
+
+\end{document}
