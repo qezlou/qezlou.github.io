@@ -1,94 +1,274 @@
-<!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<meta name="google-site-verification" content="JKc0_was3hI3iHH9nHcF0f9nTAbDxn-6lkYodVoGD7Q" />
-		<title>Mahdi (Sum) Qezlou</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
-
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
-
-				<!-- Intro -->
-					<div id="intro">
-						<h2>Mahdi (Sum) Qezlou</h2>
-						<p>Astrophysics researcher transitioning to Machine Learning & AI — choose a path to explore.</p>
-						<ul class="actions">
-							<li><a href="#choices" class="button icon solid solo fa-arrow-down scrolly">Explore</a></li>
-						</ul>
-					</div>
-
-				<!-- Header -->
-					<header id="header">
-						<a class="logo" href="index.html">About me</a>
-					</header>
-
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="icons">
-							<li><a href="https://github.com/qezlou" class="icon brands fa-github"> My Github<span class="label">GitHub</span></a></li>
-							<li><a href="docs/cv_academic/main.pdf">My academic CV </a></li>
-						</ul>
-					</nav>
-
-				<!-- Main -->
-					<div id="main">
-
-						<header class="major">
-							<h2 id="choices">Explore My Work</h2>
-							<p>Select either my Astrophysics research or my Machine Learning projects.</p>
-						</header>
-
-						<section class="posts">
-							<article>
-								<header>
-									<h3>Astrophysics Research</h3>
-									</header>
-									<a href="astrophysics.html" class="image fit"><img src="images/LIM_Lytomo.png" alt="Astrophysics" /></a>
-								<p>Publications, collaborations, and demos from my work on large-scale structure, Lyα tomography, and observational surveys.</p>
-								<ul class="actions special">
-									<li><a href="astrophysics.html" class="button">View Astrophysics</a></li>
-								</ul>
-							</article>
-
-							<article>
-								<header>
-									<h3>Machine Learning Projects</h3>
-								</header>
-								<a href="ml.html" class="image fit"><img src="images/pic05.jpg" alt="Machine Learning" /></a>
-								<p>Data science and ML projects, notebooks, demos, and links to code — focused on models, reproducibility, and demos.</p>
-								<ul class="actions special">
-									<li><a href="ml.html" class="button">View ML Projects</a></li>
-								</ul>
-							</article>
-						</section>
-
-						<section>
-							<article class="post featured">
-								<span class="image left"><img src="images/photo.jpg" alt="" /></span>
-								<p>I'm Sum (Mahdi) Qezlou — a postdoctoral researcher with a PhD from UC Riverside. I work at the intersection of astrophysics and modern data-driven methods. You can reach me at mahdi.qezlou@email.ucr.edu</p>
-							</article>
-						</section>
-
-					</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="JKc0_was3hI3iHH9nHcF0f9nTAbDxn-6lkYodVoGD7Q" />
+    <title>Mahdi (Sum) Qezlou — Astrophysics & Machine Learning</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #fff;
+        }
+        
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+        .hero-content {
+            max-width: 800px;
+        }
+        .profile-photo {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid rgba(255,255,255,0.3);
+            margin-bottom: 2rem;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+        .hero .subtitle {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            opacity: 0.95;
+            font-weight: 300;
+        }
+        .hero .tagline {
+            font-size: 1.1rem;
+            margin-bottom: 3rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* CTA Buttons */
+        .cta-container {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 3rem;
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 1.2rem 2.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            min-width: 240px;
+        }
+        .cta-primary {
+            background: white;
+            color: #667eea;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        .cta-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+        .cta-secondary {
+            background: rgba(255,255,255,0.2);
+            color: white;
+            border: 2px solid white;
+            backdrop-filter: blur(10px);
+        }
+        .cta-secondary:hover {
+            background: rgba(255,255,255,0.3);
+            transform: translateY(-3px);
+        }
+        
+        /* About Section */
+        .about {
+            padding: 5rem 2rem;
+            background: #f8f9fa;
+        }
+        .about-content {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .about h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #2d3748;
+        }
+        .about p {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            color: #4a5568;
+            margin-bottom: 1.5rem;
+        }
+        
+        /* Skills/Highlights */
+        .highlights {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+            max-width: 1100px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .highlight-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+        }
+        .highlight-card:hover {
+            transform: translateY(-5px);
+        }
+        .highlight-card h3 {
+            color: #667eea;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+        .highlight-card p {
+            font-size: 1rem;
+            color: #4a5568;
+            margin: 0;
+        }
+        
+        /* Footer */
+        footer {
+            background: #2d3748;
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+        .footer-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .social-links {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+        }
+        .social-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.05rem;
+            transition: color 0.3s ease;
+        }
+        .social-links a:hover {
+            color: #667eea;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            .hero .subtitle { font-size: 1.1rem; }
+            .hero .tagline { font-size: 1rem; }
+            .cta-button { min-width: 200px; padding: 1rem 2rem; }
+            .about h2 { font-size: 2rem; }
+            .highlights { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <img src="images/photo.jpeg" alt="Mahdi Qezlou" class="profile-photo">
+            <h1>Mahdi (Sum) Qezlou</h1>
+            <p class="subtitle">Astrophysics PhD → AI/ML Engineer</p>
+            <p class="tagline">
+                Bridging cosmological simulations and cutting-edge machine learning. 
+                Exploring career opportunities in AI/ML industry.
+            </p>
+            
+            <div class="cta-container">
+                <a href="astrophysics.html" class="cta-button cta-primary">
+                    🔭 Astrophysics Research
+                </a>
+                <a href="ml.html" class="cta-button cta-secondary">
+                    🤖 Machine Learning Projects
+                </a>
+            </div>
+            
+            <div class="social-links" style="margin-top: 2rem;">
+                <a href="https://github.com/qezlou" style="color: rgba(255,255,255,0.9);">GitHub</a>
+                <a href="docs/cv_academic/main.pdf" style="color: rgba(255,255,255,0.9);">CV</a>
+                <a href="mailto:mahdi.qezlou@email.ucr.edu" style="color: rgba(255,255,255,0.9);">Contact</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section class="about">
+        <div class="about-content">
+            <h2>About Me</h2>
+            <p>
+                I'm a postdoctoral researcher at the University of Texas at Austin, working on the 
+                <a href="https://hetdex.org/" style="color: #667eea;">HETDEX</a> observational survey. 
+                With a PhD from UC Riverside and research experience at Carnegie Observatories, 
+                I specialize in combining astrophysical simulations with machine learning.
+            </p>
+            <p>
+                I'm actively seeking opportunities to transition into the AI/ML industry, where I can 
+                apply my expertise in data science, deep learning, and large-scale computational modeling 
+                to solve real-world problems.
+            </p>
+        </div>
+        
+        <div class="highlights">
+            <div class="highlight-card">
+                <h3>🎓 Education</h3>
+                <p>PhD in Astrophysics<br>UC Riverside<br>Research at Carnegie Observatories</p>
+            </div>
+            <div class="highlight-card">
+                <h3>🔬 Research Focus</h3>
+                <p>Large-scale structure, Lyα tomography, galaxy formation, observational surveys</p>
+            </div>
+            <div class="highlight-card">
+                <h3>💻 Technical Skills</h3>
+                <p>Python, TensorFlow, PyTorch, CNNs, autoencoders, data pipelines, HPC</p>
+            </div>
+            <div class="highlight-card">
+                <h3>🚀 Career Goal</h3>
+                <p>Transitioning to AI/ML industry roles: ML Engineer, Data Scientist, Applied Scientist</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <h3 style="margin-bottom: 1rem;">Get In Touch</h3>
+            <p style="margin-bottom: 1.5rem;">
+                I'm open to opportunities in machine learning, data science, and AI engineering.
+            </p>
+            <div class="social-links">
+                <a href="https://github.com/qezlou">GitHub</a>
+                <a href="mailto:mahdi.qezlou@email.ucr.edu">Email</a>
+                <a href="docs/cv_academic/main.pdf">Download CV</a>
+            </div>
+            <p style="margin-top: 2rem; font-size: 0.9rem; opacity: 0.7;">
+                © 2025 Mahdi Qezlou. All rights reserved.
+            </p>
+        </div>
+    </footer>
+</body>
 </html>

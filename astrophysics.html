@@ -1,71 +1,279 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Astrophysics Research — Mahdi (Sum) Qezlou</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
-
-		<div id="wrapper" class="fade-in">
-
-			<header id="header">
-				<a class="logo" href="index.html">Back</a>
-			</header>
-
-			<nav id="nav">
-				<ul class="icons">
-					<li><a href="https://github.com/qezlou" class="icon brands fa-github"> GitHub<span class="label">GitHub</span></a></li>
-				</ul>
-			</nav>
-
-			<div id="main">
-				<header class="major">
-					<h2>Astrophysics Research</h2>
-					<p>Selected projects, papers, and demos from my astrophysics work.</p>
-				</header>
-
-				<section class="posts">
-					<article>
-						<header>
-							<h3>Protoclusters and protogroups in 3D Ly-alpha tomographies</h3>
-						</header>
-						<a href="https://ui.adsabs.harvard.edu/abs/2022ApJ...930..109Q/abstract" class="image fit"><img src="images/protoclusters-LATIS.png" alt="protoclusters" /></a>
-						<p>Forecasting the capability of 3D Lyα tomographies for detecting progenitors of galaxy clusters and groups. <a href="https://ui.adsabs.harvard.edu/abs/2022ApJ...930..109Q/abstract">Paper</a></p>
-						<ul class="actions special">
-							<li><a href="https://ui.adsabs.harvard.edu/abs/2022ApJ...930..109Q/abstract" class="button">Read</a></li>
-						</ul>
-					</article>
-
-					<article>
-						<header>
-							<h3>UV-dim protoclusters detected in absorption</h3>
-						</header>
-						<a href="https://ui.adsabs.harvard.edu/abs/2022Natur.606..475N/abstract" class="image fit"><img src="images/dim_protoclusters.png" alt="dim protoclusters" /></a>
-						<p>Discovery and implications for galaxy formation in extreme regions. <a href="https://ui.adsabs.harvard.edu/abs/2022Natur.606..475N/abstract">Paper</a></p>
-						<ul class="actions special">
-							<li><a href="https://ui.adsabs.harvard.edu/abs/2022Natur.606..475N/abstract" class="button">Read</a></li>
-						</ul>
-					</article>
-
-					<!-- Add more astrophysics projects here -->
-				</section>
-
-			</div>
-
-			<div id="copyright">
-				<ul><li>&copy; Sum Qezlou</li></ul>
-			</div>
-		</div>
-
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/jquery.scrollex.min.js"></script>
-		<script src="assets/js/jquery.scrolly.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
-	</body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astrophysics Research — Mahdi Qezlou</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+        }
+        
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 3rem 2rem;
+        }
+        .header-content {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .back-link {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            margin-bottom: 1rem;
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+        .back-link:hover {
+            opacity: 1;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        /* Main Content */
+        main {
+            max-width: 1100px;
+            margin: 3rem auto;
+            padding: 0 2rem;
+        }
+        
+        .intro {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            margin-bottom: 3rem;
+        }
+        .intro h2 {
+            color: #667eea;
+            margin-bottom: 1rem;
+        }
+        .intro p {
+            color: #4a5568;
+            font-size: 1.05rem;
+            line-height: 1.8;
+        }
+        
+        /* Projects Grid */
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            gap: 2rem;
+        }
+        .project-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+        }
+        .project-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        .project-content {
+            padding: 1.5rem;
+        }
+        .project-content h3 {
+            color: #2d3748;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+        .project-content p {
+            color: #4a5568;
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+        }
+        .project-links {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        .project-link {
+            display: inline-block;
+            padding: 0.6rem 1.2rem;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 0.95rem;
+            transition: background 0.3s ease;
+        }
+        .project-link:hover {
+            background: #5568d3;
+        }
+        .project-link.secondary {
+            background: #e2e8f0;
+            color: #4a5568;
+        }
+        .project-link.secondary:hover {
+            background: #cbd5e0;
+        }
+        
+        /* Video Container */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            margin: 1rem 0;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        /* Footer */
+        footer {
+            background: #2d3748;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            margin-top: 4rem;
+        }
+        footer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            header h1 { font-size: 2rem; }
+            .projects { grid-template-columns: 1fr; }
+            .project-image { height: 200px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="back-link">← Back to Home</a>
+            <h1>🔭 Astrophysics Research</h1>
+            <p>Selected publications and projects in cosmology, large-scale structure, and observational astronomy</p>
+        </div>
+    </header>
+    
+    <main>
+        <section class="intro">
+            <h2>Research Overview</h2>
+            <p>
+                My astrophysics research focuses on understanding the large-scale structure of the universe 
+                through Lyman-alpha (Lyα) forest tomography and observational surveys. I work with cutting-edge 
+                simulations and machine learning techniques to model galaxy formation, protoclusters, and the 
+                intergalactic medium. I'm a member of the <a href="https://hetdex.org/" style="color: #667eea;">HETDEX</a> 
+                and <a href="https://ui.adsabs.harvard.edu/abs/2020ApJ...891..147N/abstract" style="color: #667eea;">LATIS</a> collaborations.
+            </p>
+        </section>
+        
+        <section class="projects">
+            <article class="project-card">
+                <img src="images/protoclusters-LATIS.png" alt="Protoclusters in Lyα tomography" class="project-image">
+                <div class="project-content">
+                    <h3>Protoclusters and Protogroups in 3D Lyα Tomographies</h3>
+                    <p>
+                        We forecast the capability of current-generation 3D Lyα tomographies (e.g., LATIS) 
+                        for detecting progenitors of galaxy clusters and groups at cosmic noon. This has important 
+                        applications in understanding environmental galaxy evolution.
+                    </p>
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/VqVgtj38VuI" frameborder="0" 
+                                allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://ui.adsabs.harvard.edu/abs/2022ApJ...930..109Q/abstract" 
+                           class="project-link">Read Paper (ApJ)</a>
+                        <a href="https://github.com/qezlou" class="project-link secondary">View Code</a>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="project-card">
+                <img src="images/dim_protoclusters.png" alt="UV-dim protoclusters" class="project-image">
+                <div class="project-content">
+                    <h3>UV-Dim Protoclusters Detected in Absorption</h3>
+                    <p>
+                        In collaboration with LATIS, we discovered that the largest observed galaxy protoclusters 
+                        host very few UV-selected galaxies compared to dark matter halo predictions. Published in 
+                        <strong>Nature</strong>, these findings provide new insights about galaxy formation in 
+                        extreme cosmic environments.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://ui.adsabs.harvard.edu/abs/2022Natur.606..475N/abstract" 
+                           class="project-link">Read Paper (Nature)</a>
+                        <a href="https://github.com/qezlou" class="project-link secondary">Data Products</a>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="project-card">
+                <img src="images/LIM_Lytomo.png" alt="Line Intensity Mapping" class="project-image">
+                <div class="project-content">
+                    <h3>Boosting Line Intensity Map S/N with Lyα Forest Cross-Correlation</h3>
+                    <p>
+                        We study how 3D large-scale structure observed in Lyα tomographies can improve the 
+                        signal-to-noise detection of upcoming molecular line intensity maps (COMAP) and remove 
+                        interloper signals contaminating End of Reionization explorations (TIME).
+                    </p>
+                    <div class="project-links">
+                        <a href="https://ui.adsabs.harvard.edu/abs/2023arXiv230317632Q/abstract" 
+                           class="project-link">Read Preprint</a>
+                        <a href="https://github.com/qezlou" class="project-link secondary">Simulation Code</a>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="project-card">
+                <img src="images/Kovetz+17.png" alt="HETDEX survey" class="project-image">
+                <div class="project-content">
+                    <h3>HETDEX Observational Survey</h3>
+                    <p>
+                        As a postdoctoral researcher at UT Austin, I contribute to the HETDEX survey—one of the 
+                        largest spectroscopic surveys ever conducted. My work involves data processing, analysis 
+                        pipelines, and ML-based source classification.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://hetdex.org/" class="project-link">HETDEX Website</a>
+                        <a href="https://github.com/qezlou" class="project-link secondary">My Contributions</a>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+    
+    <footer>
+        <p>
+            <a href="index.html">Home</a> | 
+            <a href="ml.html">Machine Learning Projects</a> | 
+            <a href="https://github.com/qezlou">GitHub</a> | 
+            <a href="mailto:mahdi.qezlou@email.ucr.edu">Contact</a>
+        </p>
+        <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.7;">
+            © 2025 Mahdi Qezlou
+        </p>
+    </footer>
+</body>
 </html>

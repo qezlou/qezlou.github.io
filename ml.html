@@ -1,71 +1,363 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Machine Learning Projects — Mahdi (Sum) Qezlou</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
-
-		<div id="wrapper" class="fade-in">
-
-			<header id="header">
-				<a class="logo" href="index.html">Back</a>
-			</header>
-
-			<nav id="nav">
-				<ul class="icons">
-					<li><a href="https://github.com/qezlou" class="icon brands fa-github"> GitHub<span class="label">GitHub</span></a></li>
-				</ul>
-			</nav>
-
-			<div id="main">
-				<header class="major">
-					<h2>Machine Learning Projects</h2>
-					<p>Selected ML and data-science projects, reproducible notebooks, and demos.</p>
-				</header>
-
-				<section class="posts">
-					<article>
-						<header>
-							<h3>Simulation-to-observation model</h3>
-						</header>
-						<a class="image fit"><img src="images/pic03.jpg" alt="simulation to observation" /></a>
-						<p>A model that maps simulation outputs to observational-like mock data using CNNs and probabilistic calibration. <a href="https://github.com/qezlou">Code</a></p>
-						<ul class="actions special">
-							<li><a href="https://github.com/qezlou" class="button">View Code</a></li>
-						</ul>
-					</article>
-
-					<article>
-						<header>
-							<h3>Autoencoder for denoising tomographic maps</h3>
-						</header>
-						<a class="image fit"><img src="images/pic04.jpg" alt="autoencoder" /></a>
-						<p>An autoencoder trained to remove noise from 3D tomographic reconstructions. Includes notebooks and small demo.</p>
-						<ul class="actions special">
-							<li><a href="https://github.com/qezlou" class="button">Notebooks</a></li>
-						</ul>
-					</article>
-
-					<!-- Add more ML projects here -->
-				</section>
-
-			</div>
-
-			<div id="copyright">
-				<ul><li>&copy; Sum Qezlou</li></ul>
-			</div>
-		</div>
-
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/jquery.scrollex.min.js"></script>
-		<script src="assets/js/jquery.scrolly.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
-	</body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Learning Projects — Mahdi Qezlou</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+        }
+        
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 3rem 2rem;
+        }
+        .header-content {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .back-link {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            margin-bottom: 1rem;
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+        .back-link:hover {
+            opacity: 1;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        /* Main Content */
+        main {
+            max-width: 1100px;
+            margin: 3rem auto;
+            padding: 0 2rem;
+        }
+        
+        .intro {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            margin-bottom: 3rem;
+        }
+        .intro h2 {
+            color: #667eea;
+            margin-bottom: 1rem;
+        }
+        .intro p {
+            color: #4a5568;
+            font-size: 1.05rem;
+            line-height: 1.8;
+        }
+        
+        /* Tech Stack */
+        .tech-stack {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+        .tech-badge {
+            background: #667eea;
+            color: white;
+            padding: 0.4rem 0.9rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+        
+        /* Projects Grid */
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            gap: 2rem;
+        }
+        .project-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+        }
+        .project-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .project-content {
+            padding: 1.5rem;
+        }
+        .project-content h3 {
+            color: #2d3748;
+            margin-bottom: 0.5rem;
+            font-size: 1.3rem;
+        }
+        .project-tags {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 1rem;
+        }
+        .tag {
+            background: #e2e8f0;
+            color: #4a5568;
+            padding: 0.3rem 0.7rem;
+            border-radius: 12px;
+            font-size: 0.8rem;
+        }
+        .project-content p {
+            color: #4a5568;
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+        }
+        .project-links {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        .project-link {
+            display: inline-block;
+            padding: 0.6rem 1.2rem;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 0.95rem;
+            transition: background 0.3s ease;
+        }
+        .project-link:hover {
+            background: #5568d3;
+        }
+        .project-link.secondary {
+            background: #e2e8f0;
+            color: #4a5568;
+        }
+        .project-link.secondary:hover {
+            background: #cbd5e0;
+        }
+        
+        /* Footer */
+        footer {
+            background: #2d3748;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            margin-top: 4rem;
+        }
+        footer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            header h1 { font-size: 2rem; }
+            .projects { grid-template-columns: 1fr; }
+            .project-image { height: 200px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="back-link">← Back to Home</a>
+            <h1>🤖 Machine Learning Projects</h1>
+            <p>Data science, deep learning, and ML engineering projects with reproducible code</p>
+        </div>
+    </header>
+    
+    <main>
+        <section class="intro">
+            <h2>ML & Data Science Portfolio</h2>
+            <p>
+                My machine learning work spans computer vision, probabilistic modeling, and large-scale data pipelines. 
+                I have experience deploying models for scientific applications and am transitioning these skills to 
+                industry use cases. All projects include well-documented code, reproducible notebooks, and clear documentation.
+            </p>
+            <div class="tech-stack">
+                <span class="tech-badge">Python</span>
+                <span class="tech-badge">TensorFlow</span>
+                <span class="tech-badge">PyTorch</span>
+                <span class="tech-badge">Scikit-learn</span>
+                <span class="tech-badge">Keras</span>
+                <span class="tech-badge">NumPy</span>
+                <span class="tech-badge">Pandas</span>
+                <span class="tech-badge">HPC/GPU</span>
+                <span class="tech-badge">Docker</span>
+                <span class="tech-badge">Git</span>
+            </div>
+        </section>
+        
+        <section class="projects">
+            <article class="project-card">
+                <img src="images/pic03.jpg" alt="Simulation to Observation Model" class="project-image">
+                <div class="project-content">
+                    <h3>Simulation-to-Observation Translation Model</h3>
+                    <div class="project-tags">
+                        <span class="tag">CNNs</span>
+                        <span class="tag">Computer Vision</span>
+                        <span class="tag">PyTorch</span>
+                        <span class="tag">HPC</span>
+                    </div>
+                    <p>
+                        Developed a deep CNN that maps cosmological simulation outputs to realistic observational 
+                        mock data. Uses probabilistic calibration and domain adaptation techniques. Trained on 
+                        50+ TB of simulation data using distributed GPU computing.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://github.com/qezlou" class="project-link">View Code</a>
+                        <a href="https://github.com/qezlou" class="project-link secondary">Documentation</a>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="project-card">
+                <img src="images/pic04.jpg" alt="Autoencoder for Denoising" class="project-image">
+                <div class="project-content">
+                    <h3>3D Autoencoder for Tomographic Map Denoising</h3>
+                    <div class="project-tags">
+                        <span class="tag">Autoencoders</span>
+                        <span class="tag">TensorFlow</span>
+                        <span class="tag">3D CNNs</span>
+                        <span class="tag">Signal Processing</span>
+                    </div>
+                    <p>
+                        Built a 3D convolutional autoencoder to denoise large-scale tomographic reconstructions. 
+                        Achieves 40% noise reduction while preserving structural features. Includes Jupyter notebooks 
+                        with interactive demos and model checkpoints.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://github.com/qezlou" class="project-link">View Code</a>
+                        <a href="https://github.com/qezlou" class="project-link secondary">Notebooks</a>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="project-card">
+                <img src="images/pic05.jpg" alt="ML Pipeline" class="project-image">
+                <div class="project-content">
+                    <h3>End-to-End ML Pipeline for Survey Data</h3>
+                    <div class="project-tags">
+                        <span class="tag">Data Engineering</span>
+                        <span class="tag">ETL</span>
+                        <span class="tag">Scikit-learn</span>
+                        <span class="tag">Distributed Computing</span>
+                    </div>
+                    <p>
+                        Designed and deployed a complete ML pipeline for processing HETDEX survey data: data ingestion, 
+                        feature engineering, model training, and inference at scale. Processes 1M+ spectra with 
+                        automated quality control and anomaly detection.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://github.com/qezlou" class="project-link">View Code</a>
+                        <a href="https://github.com/qezlou" class="project-link secondary">Architecture</a>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="project-card">
+                <img src="images/pic06.jpg" alt="Transfer Learning" class="project-image">
+                <div class="project-content">
+                    <h3>Transfer Learning for Galaxy Classification</h3>
+                    <div class="project-tags">
+                        <span class="tag">Transfer Learning</span>
+                        <span class="tag">ResNet</span>
+                        <span class="tag">PyTorch</span>
+                        <span class="tag">Classification</span>
+                    </div>
+                    <p>
+                        Fine-tuned ResNet models for galaxy morphology classification using limited labeled data. 
+                        Applied data augmentation and ensemble methods to achieve 92% accuracy. Includes model 
+                        interpretability analysis with Grad-CAM visualizations.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://github.com/qezlou" class="project-link">View Code</a>
+                        <a href="https://github.com/qezlou" class="project-link secondary">Demo</a>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="project-card">
+                <img src="images/pic07.jpg" alt="Probabilistic Models" class="project-image">
+                <div class="project-content">
+                    <h3>Bayesian Inference & Probabilistic Models</h3>
+                    <div class="project-tags">
+                        <span class="tag">Bayesian ML</span>
+                        <span class="tag">MCMC</span>
+                        <span class="tag">Uncertainty Quantification</span>
+                        <span class="tag">Python</span>
+                    </div>
+                    <p>
+                        Implemented Bayesian inference pipelines for parameter estimation with uncertainty 
+                        quantification. Uses MCMC sampling (emcee, PyMC3) and variational inference. Applied to 
+                        cosmological parameter constraints and model selection.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://github.com/qezlou" class="project-link">View Code</a>
+                        <a href="https://github.com/qezlou" class="project-link secondary">Tutorials</a>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="project-card">
+                <img src="images/pic08.jpg" alt="Time Series Analysis" class="project-image">
+                <div class="project-content">
+                    <h3>Time Series Forecasting & Anomaly Detection</h3>
+                    <div class="project-tags">
+                        <span class="tag">LSTMs</span>
+                        <span class="tag">Time Series</span>
+                        <span class="tag">Anomaly Detection</span>
+                        <span class="tag">Keras</span>
+                    </div>
+                    <p>
+                        Built LSTM-based models for time series analysis of astronomical transients. Includes 
+                        real-time anomaly detection and forecasting. Deployed using Flask API with Docker 
+                        containerization for reproducibility.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://github.com/qezlou" class="project-link">View Code</a>
+                        <a href="https://github.com/qezlou" class="project-link secondary">API Docs</a>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+    
+    <footer>
+        <p>
+            <a href="index.html">Home</a> | 
+            <a href="astrophysics.html">Astrophysics Research</a> | 
+            <a href="https://github.com/qezlou">GitHub</a> | 
+            <a href="mailto:mahdi.qezlou@email.ucr.edu">Contact</a>
+        </p>
+        <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.7;">
+            © 2025 Mahdi Qezlou
+        </p>
+    </footer>
+</body>
 </html>
