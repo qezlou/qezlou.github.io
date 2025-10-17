@@ -262,7 +262,131 @@
                 </div>
             </article>
         </section>
+        
+        <!-- Publications Section -->
+        <section style="margin-top: 4rem;">
+            <h2 style="font-size: 2rem; color: #2d3748; margin-bottom: 1.5rem; text-align: center;">📚 Publications</h2>
+            
+            <div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); margin-bottom: 2rem;">
+                <p style="color: #4a5568; font-size: 1.05rem; line-height: 1.8; text-align: center; margin-bottom: 1.5rem;">
+                    View my complete and up-to-date publication record on NASA ADS.
+                </p>
+                
+                <div style="text-align: center;">
+                    <a href="https://ui.adsabs.harvard.edu/public-libraries/MK-no7fnQfiXyzaHTA_azg" 
+                       style="display: inline-block; padding: 1rem 2rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; text-decoration: none; border-radius: 8px; font-weight: 600; transition: all 0.3s ease;">
+                        View Full Publication List on ADS →
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Dynamic Publications List -->
+            <div id="publications-container" style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08);">
+                <h3 style="color: #667eea; margin-bottom: 1.5rem; font-size: 1.4rem;">All Publications</h3>
+                
+                <!-- Loading indicator -->
+                <div id="loading" style="text-align: center; padding: 2rem;">
+                    <p style="color: #4a5568; font-size: 1rem;">Loading publications from ADS...</p>
+                </div>
+                
+                <!-- Publications will be dynamically inserted here -->
+                <div id="publications-list" style="display: flex; flex-direction: column; gap: 1rem;"></div>
+                
+                <!-- Error message (hidden by default) -->
+                <div id="error-message" style="display: none; padding: 1.5rem; background: #fff5f5; border-left: 4px solid #fc8181; border-radius: 8px; margin-top: 1rem;">
+                    <p style="color: #c53030; margin: 0;">
+                        Unable to load publications automatically. Please visit the 
+                        <a href="https://ui.adsabs.harvard.edu/public-libraries/MK-no7fnQfiXyzaHTA_azg" style="color: #667eea;">
+                            ADS library
+                        </a> directly.
+                    </p>
+                </div>
+            </div>
+        </section>
     </main>
+    
+    <script>
+        // Fetch publications from ADS library
+        async function fetchPublications() {
+            const loadingEl = document.getElementById('loading');
+            const listEl = document.getElementById('publications-list');
+            const errorEl = document.getElementById('error-message');
+            
+            try {
+                // ADS library ID
+                const libraryId = 'MK-no7fnQfiXyzaHTA_azg';
+                
+                // Since direct ADS API requires authentication, we'll use a workaround
+                // Option 1: Use a backend proxy (recommended for production)
+                // Option 2: Manually maintain a JSON file with publications
+                
+                // For now, try to fetch from a local JSON file that you can update
+                const response = await fetch('publications.json');
+                
+                if (!response.ok) {
+                    throw new Error('Publications file not found');
+                }
+                
+                const data = await response.json();
+                loadingEl.style.display = 'none';
+                
+                if (data.publications && data.publications.length > 0) {
+                    renderPublications(data.publications);
+                } else {
+                    throw new Error('No publications found');
+                }
+                
+            } catch (error) {
+                console.error('Error loading publications:', error);
+                loadingEl.style.display = 'none';
+                errorEl.style.display = 'block';
+                
+                // Fallback: show a message to visit ADS directly
+                listEl.innerHTML = `
+                    <div style="text-align: center; padding: 2rem; color: #4a5568;">
+                        <p style="margin-bottom: 1rem;">For the most up-to-date publication list, please visit:</p>
+                        <a href="https://ui.adsabs.harvard.edu/public-libraries/MK-no7fnQfiXyzaHTA_azg" 
+                           style="color: #667eea; font-weight: 600; text-decoration: none;">
+                            My ADS Library →
+                        </a>
+                    </div>
+                `;
+            }
+        }
+        
+        function renderPublications(publications) {
+            const listEl = document.getElementById('publications-list');
+            
+            publications.forEach((pub, index) => {
+                const pubEl = document.createElement('div');
+                pubEl.style.cssText = 'padding: 1rem; background: #f8f9fa; border-radius: 8px; border-left: 4px solid #667eea;';
+                
+                const year = pub.year || 'N/A';
+                const journal = pub.journal || 'Preprint';
+                const firstAuthor = pub.authors && pub.authors.length > 0 ? pub.authors[0].split(',')[0] : 'Unknown';
+                
+                pubEl.innerHTML = `
+                    <p style="font-weight: 600; color: #2d3748; margin-bottom: 0.5rem; font-size: 0.95rem;">
+                        ${firstAuthor} et al. (${year}) — ${journal}
+                    </p>
+                    <p style="color: #4a5568; margin-bottom: 0.5rem; font-style: italic; font-size: 0.9rem;">
+                        "${pub.title}"
+                    </p>
+                    ${pub.bibcode ? `
+                        <a href="https://ui.adsabs.harvard.edu/abs/${pub.bibcode}/abstract" 
+                           style="color: #667eea; text-decoration: none; font-size: 0.85rem;">
+                            Read on ADS →
+                        </a>
+                    ` : ''}
+                `;
+                
+                listEl.appendChild(pubEl);
+            });
+        }
+        
+        // Load publications when page loads
+        document.addEventListener('DOMContentLoaded', fetchPublications);
+    </script>
     
     <footer>
         <p>
@@ -275,5 +399,14 @@
             © 2025 Mahdi Qezlou
         </p>
     </footer>
+</body>
+</html>
+                    </div>
+                    
+                </div>
+                
+        </section>
+    </main>
+    
 </body>
 </html>

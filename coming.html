@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon — Mahdi Qezlou</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8f9fa;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+        }
+        .header-content {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .back-link {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            opacity: 0.9;
+            transition: opacity 0.3s ease;
+        }
+        .back-link:hover {
+            opacity: 1;
+        }
+        
+        /* Main Content */
+        main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+        
+        .coming-soon-container {
+            text-align: center;
+            max-width: 600px;
+        }
+        
+        .icon {
+            font-size: 5rem;
+            margin-bottom: 2rem;
+            animation: pulse 2s ease-in-out infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 1; }
+            50% { transform: scale(1.1); opacity: 0.8; }
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            color: #2d3748;
+            margin-bottom: 1rem;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            color: #4a5568;
+            margin-bottom: 2rem;
+        }
+        
+        .message {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            margin-bottom: 2rem;
+        }
+        
+        .message p {
+            color: #4a5568;
+            font-size: 1.05rem;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .button {
+            display: inline-block;
+            padding: 0.9rem 1.8rem;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .button-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+        
+        .button-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+        }
+        
+        .button-secondary {
+            background: #e2e8f0;
+            color: #4a5568;
+        }
+        
+        .button-secondary:hover {
+            background: #cbd5e0;
+        }
+        
+        /* Footer */
+        footer {
+            background: #2d3748;
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+        }
+        
+        footer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 { font-size: 2rem; }
+            .subtitle { font-size: 1.05rem; }
+            .icon { font-size: 4rem; }
+            .cta-buttons { flex-direction: column; }
+            .button { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="back-link">← Back to Home</a>
+        </div>
+    </header>
+    
+    <main>
+        <div class="coming-soon-container">
+            <div class="icon">🚧</div>
+            <h1>Page Under Construction</h1>
+            <p class="subtitle">This content is being prepared and will be available soon!</p>
+            
+            <div class="message">
+                <p>
+                    I'm currently working on adding more detailed content to this section. 
+                    In the meantime, feel free to explore other parts of my portfolio or get in touch.
+                </p>
+                <p style="margin-bottom: 0;">
+                    <strong>Check back soon for updates!</strong>
+                </p>
+            </div>
+            
+            <div class="cta-buttons">
+                <a href="index.html" class="button button-primary">Go to Homepage</a>
+                <a href="mailto:mahdi.qezlou@email.ucr.edu" class="button button-secondary">Contact Me</a>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>
+            <a href="index.html">Home</a> | 
+            <a href="astrophysics.html">Astrophysics</a> | 
+            <a href="ml.html">Machine Learning</a> | 
+            <a href="https://github.com/qezlou">GitHub</a>
+        </p>
+        <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.7;">
+            © 2025 Mahdi Qezlou
+        </p>
+    </footer>
+</body>
+</html>

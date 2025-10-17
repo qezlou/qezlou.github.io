@@ -1,0 +1,329 @@
+{
+  "last_updated": "2025-10-13T23:35:50.669575",
+  "count": 17,
+  "publications": [
+    {
+      "bibcode": "2025arXiv251007445C",
+      "title": "LATIS: Galaxy-Environment Relations at Cosmic Noon and the Role of Sample Selection",
+      "authors": [
+        "Chartab, Nima",
+        "Newman, Andrew B.",
+        "Rudie, Gwen C.",
+        "Blanc, Guillermo",
+        "Kelson, Daniel D.",
+        "Qezlou, Mahdi",
+        "Bird, Simeon",
+        "Lemaux, Brian C.",
+        "Cucciati, Olga"
+      ],
+      "year": "2025",
+      "journal": "arXiv e-prints",
+      "citation_count": 0,
+      "pubdate": "2025-10-00"
+    },
+    {
+      "bibcode": "2025arXiv251008815N",
+      "title": "LATIS Data Release: $\\sim4200$ Spectra of $z \\sim 2-3$ Galaxies, Redshifts, and IGM Tomography Maps",
+      "authors": [
+        "Newman, Andrew B.",
+        "Rudie, Gwen C.",
+        "Blanc, Guillermo A.",
+        "Kelson, Daniel D.",
+        "Chartab, Nima",
+        "Congiu, Enrico",
+        "Pérez, Victoria",
+        "Qezlou, Mahdi",
+        "Bird, Simeon",
+        "Lemaux, Brian C.",
+        "Cucciati, Olga"
+      ],
+      "year": "2025",
+      "journal": "arXiv e-prints",
+      "citation_count": 0,
+      "pubdate": "2025-10-00"
+    },
+    {
+      "bibcode": "2025arXiv250918271H",
+      "title": "Small-scale Lyman alpha forest cosmology with PRIYA: Constraints from XQ100 and KODIAQ-SQUAD one-dimensional flux power spectra",
+      "authors": [
+        "Ho, Ming-Feng",
+        "Qezlou, Mahdi",
+        "Bird, Simeon",
+        "Yang, Yanhui",
+        "Avestruz, Camille",
+        "Fernandez, M. A.",
+        "Iršič, Vid"
+      ],
+      "year": "2025",
+      "journal": "arXiv e-prints",
+      "citation_count": 0,
+      "pubdate": "2025-09-00"
+    },
+    {
+      "bibcode": "2025ApJ...989..169K",
+      "title": "The HETDEX Survey: Probing Neutral Hydrogen in the Circumgalactic Medium of ∼88,000 Lyα Emitters",
+      "authors": [
+        "Mirza Khanlari, Mahan",
+        "Gebhardt, Karl",
+        "Weiss, Laurel H.",
+        "Davis, Dustin",
+        "Mentuch Cooper, Erin",
+        "Qezlou, Mahdi",
+        "Lujan Niemeyer, Maja",
+        "Ciardullo, Robin",
+        "Schneider, Donald P.",
+        "Mukae, Shiro",
+        "Liu, Chenxu",
+        "Farrow, Daniel",
+        "Hill, Gary J.",
+        "Zeimann, Gregory R.",
+        "Kollatschny, Wolfram"
+      ],
+      "year": "2025",
+      "journal": "The Astrophysical Journal",
+      "citation_count": 0,
+      "pubdate": "2025-08-00"
+    },
+    {
+      "bibcode": "2025arXiv250716189H",
+      "title": "An AI super-resolution field emulator for cosmological hydrodynamics: the Lyman-α forest",
+      "authors": [
+        "Hafezianzadeh, Fatemeh",
+        "Zhang, Xiaowen",
+        "Ni, Yueying",
+        "Croft, Rupert A. C.",
+        "DiMatteo, Tiziana",
+        "Qezlou, Mahdi",
+        "Bird, Simeon"
+      ],
+      "year": "2025",
+      "journal": "arXiv e-prints",
+      "citation_count": 0,
+      "pubdate": "2025-07-00"
+    },
+    {
+      "bibcode": "2025arXiv250707184Y",
+      "title": "Design and optimization of neural networks for multifidelity cosmological emulation",
+      "authors": [
+        "Yang, Yanhui",
+        "Bird, Simeon",
+        "Ho, Ming-Feng",
+        "Qezlou, Mahdi"
+      ],
+      "year": "2025",
+      "journal": "arXiv e-prints",
+      "citation_count": 1,
+      "pubdate": "2025-07-00"
+    },
+    {
+      "bibcode": "2025arXiv250707177Y",
+      "title": "Ten-dimensional neural network emulator for the nonlinear matter power spectrum",
+      "authors": [
+        "Yang, Yanhui",
+        "Bird, Simeon",
+        "Ho, Ming-Feng",
+        "Qezlou, Mahdi"
+      ],
+      "year": "2025",
+      "journal": "arXiv e-prints",
+      "citation_count": 1,
+      "pubdate": "2025-07-00"
+    },
+    {
+      "bibcode": "2025ApJ...988...48N",
+      "title": "LATIS: Comparing Galaxy and IGM Tomography Maps as Tracers of Large-scale Structure and Protoclusters at z ∼ 2.5",
+      "authors": [
+        "Newman, Andrew B.",
+        "Chartab, Nima",
+        "Qezlou, Mahdi",
+        "Rudie, Gwen C.",
+        "Blanc, Guillermo A.",
+        "Kelson, Daniel D.",
+        "Bird, Simeon",
+        "Casey, Caitlin",
+        "Congiu, Enrico",
+        "Cucciati, Olga",
+        "Hung, Denise",
+        "Lemaux, Brian C.",
+        "Pérez, Victoria",
+        "Zavala, Jorge"
+      ],
+      "year": "2025",
+      "journal": "The Astrophysical Journal",
+      "citation_count": 1,
+      "pubdate": "2025-07-00"
+    },
+    {
+      "bibcode": "2025ApJ...988...47N",
+      "title": "LATIS: A Sample of IGM-selected Protoclusters and Protogroups at z ∼ 2.5",
+      "authors": [
+        "Newman, Andrew B.",
+        "Qezlou, Mahdi",
+        "Rudie, Gwen C.",
+        "Chartab, Nima",
+        "Blanc, Guillermo A.",
+        "Kelson, Daniel D.",
+        "Bird, Simeon",
+        "Casey, Caitlin",
+        "Congiu, Enrico",
+        "Cucciati, Olga",
+        "Hung, Denise",
+        "Lemaux, Brian C.",
+        "Pérez, Victoria",
+        "Zavala, Jorge"
+      ],
+      "year": "2025",
+      "journal": "The Astrophysical Journal",
+      "citation_count": 1,
+      "pubdate": "2025-07-00"
+    },
+    {
+      "bibcode": "2025ApJ...983...72W",
+      "title": "Using Lyα Absorption to Measure the Intensity and Variability of z ∼ 2.4 Ultraviolet Background Light",
+      "authors": [
+        "Weiss, Laurel H.",
+        "Gebhardt, Karl",
+        "Davis, Dustin",
+        "Mentuch Cooper, Erin",
+        "Lujan Niemeyer, Maja",
+        "Qezlou, Mahdi",
+        "Mirza Khanlari, Mahan",
+        "Ciardullo, Robin",
+        "Farrow, Daniel",
+        "Gawiser, Eric",
+        "Gazagnes, Simon",
+        "Gronwall, Caryl",
+        "Hill, Gary J.",
+        "Schneider, Donald P."
+      ],
+      "year": "2025",
+      "journal": "The Astrophysical Journal",
+      "citation_count": 1,
+      "pubdate": "2025-04-00"
+    },
+    {
+      "bibcode": "2024PhRvL.132w1002T",
+      "title": "Forecast Cosmological Constraints with the 1D Wavelet Scattering Transform and the Lyman-α Forest",
+      "authors": [
+        "Tohfa, Hurum Maksora",
+        "Bird, Simeon",
+        "Ho, Ming-Feng",
+        "Qezlou, Mahdi",
+        "Fernandez, Martin"
+      ],
+      "year": "2024",
+      "journal": "Physical Review Letters",
+      "citation_count": 4,
+      "pubdate": "2024-06-00"
+    },
+    {
+      "bibcode": "2024ApJ...961...27N",
+      "title": "LATIS: Constraints on the Galaxy-Halo Connection at z   2.5 from Galaxy-Galaxy and Galaxy-Lyα Clustering",
+      "authors": [
+        "Newman, Andrew B.",
+        "Qezlou, Mahdi",
+        "Chartab, Nima",
+        "Rudie, Gwen C.",
+        "Blanc, Guillermo A.",
+        "Bird, Simeon",
+        "Benson, Andrew J.",
+        "Kelson, Daniel D.",
+        "Lemaux, Brian C."
+      ],
+      "year": "2024",
+      "journal": "The Astrophysical Journal",
+      "citation_count": 6,
+      "pubdate": "2024-01-00"
+    },
+    {
+      "bibcode": "2023JCAP...10..037B",
+      "title": "PRIYA: a new suite of Lyman-α forest simulations for cosmology",
+      "authors": [
+        "Bird, Simeon",
+        "Fernandez, Martin",
+        "Ho, Ming-Feng",
+        "Qezlou, Mahdi",
+        "Monadi, Reza",
+        "Ni, Yueying",
+        "Chen, Nianyi",
+        "Croft, Rupert",
+        "Di Matteo, Tiziana"
+      ],
+      "year": "2023",
+      "journal": "Journal of Cosmology and Astroparticle Physics",
+      "citation_count": 23,
+      "pubdate": "2023-10-00"
+    },
+    {
+      "bibcode": "2023MNRAS.524.1933Q",
+      "title": "Boosting line intensity map signal-to-noise ratio with the Ly-α forest cross-correlation",
+      "authors": [
+        "Qezlou, Mahdi",
+        "Bird, Simeon",
+        "Lidz, Adam",
+        "Sun, Guochao",
+        "Newman, Andrew B.",
+        "Rudie, Gwen C.",
+        "Ni, Yueying",
+        "Croft, Rupert",
+        "Di Matteo, Tiziana"
+      ],
+      "year": "2023",
+      "journal": "Monthly Notices of the Royal Astronomical Society",
+      "citation_count": 6,
+      "pubdate": "2023-09-00"
+    },
+    {
+      "bibcode": "2022Natur.606..475N",
+      "title": "A population of ultraviolet-dim protoclusters detected in absorption",
+      "authors": [
+        "Newman, Andrew B.",
+        "Rudie, Gwen C.",
+        "Blanc, Guillermo A.",
+        "Qezlou, Mahdi",
+        "Bird, Simeon",
+        "Kelson, Daniel D.",
+        "Pérez, Victoria",
+        "Congiu, Enrico",
+        "Lemaux, Brian C.",
+        "Dressler, Alan",
+        "Mulchaey, John S."
+      ],
+      "year": "2022",
+      "journal": "Nature",
+      "citation_count": 22,
+      "pubdate": "2022-06-00"
+    },
+    {
+      "bibcode": "2022ApJ...930..109Q",
+      "title": "Characterizing Protoclusters and Protogroups at z 2.5 Using Lyα Tomography",
+      "authors": [
+        "Qezlou, Mahdi",
+        "Newman, Andrew B.",
+        "Rudie, Gwen C.",
+        "Bird, Simeon"
+      ],
+      "year": "2022",
+      "journal": "The Astrophysical Journal",
+      "citation_count": 19,
+      "pubdate": "2022-05-00"
+    },
+    {
+      "bibcode": "2022AJ....163...63M",
+      "title": "Densified Pupil Spectrograph as High-precision Radial Velocimetry: From Direct Measurement of the Universe's Expansion History to Characterization of Nearby Habitable Planet Candidates",
+      "authors": [
+        "Matsuo, Taro",
+        "Greene, Thomas P.",
+        "Qezlou, Mahdi",
+        "Bird, Simeon",
+        "Ichiki, Kiyotomo",
+        "Fujii, Yuka",
+        "Yamamuro, Tomoyasu"
+      ],
+      "year": "2022",
+      "journal": "The Astronomical Journal",
+      "citation_count": 3,
+      "pubdate": "2022-02-00"
+    }
+  ]
+}

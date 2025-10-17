@@ -195,9 +195,10 @@
         <section class="intro">
             <h2>ML & Data Science Portfolio</h2>
             <p>
-                My machine learning work spans computer vision, probabilistic modeling, and large-scale data pipelines. 
-                I have experience deploying models for scientific applications and am transitioning these skills to 
-                industry use cases. All projects include well-documented code, reproducible notebooks, and clear documentation.
+                I’m passionate about building predictive models and performing causal inference in real-world, often noisy and biased, 
+                data environments. My expertise lies in probabilistic modeling, particularly through generative models and Bayesian methods.
+                Below are some sample projects I led end-to-end — from data processing to model development, evaluation, and deployment.
+                Feel free to reach out if you’d like to chat: sumqezlou+at+gmail.com
             </p>
             <div class="tech-stack">
                 <span class="tech-badge">Python</span>
@@ -215,31 +216,55 @@
         
         <section class="projects">
             <article class="project-card">
-                <img src="images/pic03.jpg" alt="Simulation to Observation Model" class="project-image">
+                <img src="images/pic03.jpg" alt="Accurate Causal Inference using Surrogate Modeling" class="project-image">
                 <div class="project-content">
-                    <h3>Simulation-to-Observation Translation Model</h3>
+                    <h3>GenAI for Surrogate Modeling</h3>
                     <div class="project-tags">
-                        <span class="tag">CNNs</span>
-                        <span class="tag">Computer Vision</span>
-                        <span class="tag">PyTorch</span>
-                        <span class="tag">HPC</span>
+                        <span class="tag">Gaussian Processes</span>
+                        <span class="tag">Deep Learning</span>
+                        <span class="tag">Variational Inference</span>
+                        <span class="tag">TensorFlow</span>
+                        <span class="tag">Distributed Training-GPU/CPU</span>
+                        <span class="tag">Uncertainty Quantification</span>
                     </div>
                     <p>
-                        Developed a deep CNN that maps cosmological simulation outputs to realistic observational 
-                        mock data. Uses probabilistic calibration and domain adaptation techniques. Trained on 
-                        50+ TB of simulation data using distributed GPU computing.
+                        Developed two independent surrogate models (Gaussian Processes and Deep Learning) to map cosmological simulation outputs 
+                        to realistic observed data. These novel models enable fast, percent-level accurate inference on observational datasets, 
+                        for the first time.
                     </p>
                     <div class="project-links">
-                        <a href="https://github.com/qezlou" class="project-link">View Code</a>
-                        <a href="https://github.com/qezlou" class="project-link secondary">Documentation</a>
+                        <a href="https://github.com/qezlou/private-gal-emu" class="project-link">Gaussian Processes Model</a>
+                        <a href="https://github.com/qezlou/gal_nn" class="project-link secondary">Deep Learning Model</a>
                     </div>
                 </div>
             </article>
-            
+   
+            <article class="project-card">
+                <img src="images/pic06.jpg" alt="ML Pipeline" class="project-image">
+                <div class="project-content">
+                    <h3>Robust GenAI for Signal Detection in Noisy, Biased Data</h3>
+                    <div class="project-tags">
+                        <span class="tag">Autoencoders</span>
+                        <span class="tag">Time Series</span>
+                        <span class="tag">Bayesian Model Selection</span>
+                        <span class="tag">PyTorch</span>
+                        <span class="tag">Generative Models</span>
+                    </div>
+                    <p>
+                        Built a generative probabilistic model to separate subtle signals from systematics and noise, 
+                        enabling reliable detection in noisy data.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://github.com/qezlou/hetgen" class="project-link">View Code</a>
+                        <a href="https://github.com/qezlou/hetgen/tree/main/notebooks" class="project-link secondary">Tutorials</a>
+                    </div>
+                </div>
+            </article>
+
             <article class="project-card">
                 <img src="images/pic04.jpg" alt="Autoencoder for Denoising" class="project-image">
                 <div class="project-content">
-                    <h3>3D Autoencoder for Tomographic Map Denoising</h3>
+                    <h3>Image Recognition in 3D Noisy Map Denoising</h3>
                     <div class="project-tags">
                         <span class="tag">Autoencoders</span>
                         <span class="tag">TensorFlow</span>
@@ -247,60 +272,15 @@
                         <span class="tag">Signal Processing</span>
                     </div>
                     <p>
-                        Built a 3D convolutional autoencoder to denoise large-scale tomographic reconstructions. 
-                        Achieves 40% noise reduction while preserving structural features. Includes Jupyter notebooks 
-                        with interactive demos and model checkpoints.
+                        Built a 3D convolutional autoencoder and classic denoising algorithms to denoise large-scale 
+                        tomographic reconstructions. Achieves 40% noise reduction while preserving structural features. 
                     </p>
                     <div class="project-links">
-                        <a href="https://github.com/qezlou" class="project-link">View Code</a>
-                        <a href="https://github.com/qezlou" class="project-link secondary">Notebooks</a>
+                        <a href="https://github.com/qezlou/LyTomo_Watershed" class="project-link">View Code</a>
                     </div>
                 </div>
             </article>
             
-            <article class="project-card">
-                <img src="images/pic05.jpg" alt="ML Pipeline" class="project-image">
-                <div class="project-content">
-                    <h3>End-to-End ML Pipeline for Survey Data</h3>
-                    <div class="project-tags">
-                        <span class="tag">Data Engineering</span>
-                        <span class="tag">ETL</span>
-                        <span class="tag">Scikit-learn</span>
-                        <span class="tag">Distributed Computing</span>
-                    </div>
-                    <p>
-                        Designed and deployed a complete ML pipeline for processing HETDEX survey data: data ingestion, 
-                        feature engineering, model training, and inference at scale. Processes 1M+ spectra with 
-                        automated quality control and anomaly detection.
-                    </p>
-                    <div class="project-links">
-                        <a href="https://github.com/qezlou" class="project-link">View Code</a>
-                        <a href="https://github.com/qezlou" class="project-link secondary">Architecture</a>
-                    </div>
-                </div>
-            </article>
-            
-            <article class="project-card">
-                <img src="images/pic06.jpg" alt="Transfer Learning" class="project-image">
-                <div class="project-content">
-                    <h3>Transfer Learning for Galaxy Classification</h3>
-                    <div class="project-tags">
-                        <span class="tag">Transfer Learning</span>
-                        <span class="tag">ResNet</span>
-                        <span class="tag">PyTorch</span>
-                        <span class="tag">Classification</span>
-                    </div>
-                    <p>
-                        Fine-tuned ResNet models for galaxy morphology classification using limited labeled data. 
-                        Applied data augmentation and ensemble methods to achieve 92% accuracy. Includes model 
-                        interpretability analysis with Grad-CAM visualizations.
-                    </p>
-                    <div class="project-links">
-                        <a href="https://github.com/qezlou" class="project-link">View Code</a>
-                        <a href="https://github.com/qezlou" class="project-link secondary">Demo</a>
-                    </div>
-                </div>
-            </article>
             
             <article class="project-card">
                 <img src="images/pic07.jpg" alt="Probabilistic Models" class="project-image">
@@ -318,33 +298,12 @@
                         cosmological parameter constraints and model selection.
                     </p>
                     <div class="project-links">
-                        <a href="https://github.com/qezlou" class="project-link">View Code</a>
-                        <a href="https://github.com/qezlou" class="project-link secondary">Tutorials</a>
+                        <a href="https://github.com/qezlou/lila" class="project-link">View Code</a>
                     </div>
                 </div>
             </article>
             
-            <article class="project-card">
-                <img src="images/pic08.jpg" alt="Time Series Analysis" class="project-image">
-                <div class="project-content">
-                    <h3>Time Series Forecasting & Anomaly Detection</h3>
-                    <div class="project-tags">
-                        <span class="tag">LSTMs</span>
-                        <span class="tag">Time Series</span>
-                        <span class="tag">Anomaly Detection</span>
-                        <span class="tag">Keras</span>
-                    </div>
-                    <p>
-                        Built LSTM-based models for time series analysis of astronomical transients. Includes 
-                        real-time anomaly detection and forecasting. Deployed using Flask API with Docker 
-                        containerization for reproducibility.
-                    </p>
-                    <div class="project-links">
-                        <a href="https://github.com/qezlou" class="project-link">View Code</a>
-                        <a href="https://github.com/qezlou" class="project-link secondary">API Docs</a>
-                    </div>
-                </div>
-            </article>
+
         </section>
     </main>
     
