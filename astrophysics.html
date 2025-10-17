@@ -34,6 +34,23 @@
         .back-link:hover {
             opacity: 1;
         }
+        .cv-button {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            padding: 0.6rem 1.5rem;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 0.95rem;
+            border: 2px solid rgba(255,255,255,0.3);
+            transition: all 0.3s ease;
+            margin-left: 1rem;
+        }
+        .cv-button:hover {
+            background: rgba(255,255,255,0.3);
+            border-color: rgba(255,255,255,0.5);
+            transform: translateY(-2px);
+        }
         header h1 {
             font-size: 2.5rem;
             margin-bottom: 0.5rem;
@@ -171,7 +188,10 @@
 <body>
     <header>
         <div class="header-content">
-            <a href="index.html" class="back-link">← Back to Home</a>
+            <div>
+                <a href="index.html" class="back-link">← Back to Home</a>
+                <a href="docs/cv_academic/main.pdf" class="cv-button">📄 Academic CV</a>
+            </div>
             <h1>🔭 Astrophysics Research</h1>
             <p>Selected publications and projects in cosmology, large-scale structure, and observational astronomy</p>
         </div>

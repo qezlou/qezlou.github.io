@@ -34,6 +34,23 @@
         .back-link:hover {
             opacity: 1;
         }
+        .cv-button {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            color: white;
+            padding: 0.6rem 1.5rem;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 0.95rem;
+            border: 2px solid rgba(255,255,255,0.3);
+            transition: all 0.3s ease;
+            margin-left: 1rem;
+        }
+        .cv-button:hover {
+            background: rgba(255,255,255,0.3);
+            border-color: rgba(255,255,255,0.5);
+            transform: translateY(-2px);
+        }
         header h1 {
             font-size: 2.5rem;
             margin-bottom: 0.5rem;
@@ -185,7 +202,10 @@
 <body>
     <header>
         <div class="header-content">
-            <a href="index.html" class="back-link">← Back to Home</a>
+            <div>
+                <a href="index.html" class="back-link">← Back to Home</a>
+                <a href="docs/cv_ml/main.pdf" class="cv-button">📄 ML/Industry CV</a>
+            </div>
             <h1>🤖 Machine Learning Projects</h1>
             <p>Data science, deep learning, and ML engineering projects with reproducible code</p>
         </div>
@@ -240,7 +260,7 @@
             </article>
    
             <article class="project-card">
-                <img src="images/hetgen.png" alt="ML Pipeline" class="project-image">
+                <img src="images/BlindSight.png" alt="ML Pipeline" class="project-image">
                 <div class="project-content">
                     <h3>Robust GenAI for Signal Detection in Noisy, Biased Data</h3>
                     <div class="project-tags">
